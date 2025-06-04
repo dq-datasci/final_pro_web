@@ -21,5 +21,10 @@ def index():
 def demo():
     return render_template("demo.html")
 
+@app.route('/resumen')
+def resumen():
+    return render_template("resumen.html")
+
+
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5000)
