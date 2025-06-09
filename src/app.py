@@ -16,7 +16,14 @@ app = Flask(__name__, template_folder=template_dir, static_folder=static_dir)
 @app.route('/')
 def index():
     title="Bienvenido a mi sitio web"
-    return render_template('index.html', title=title)
+    datos = {
+        "nombre": "David",
+        "apellido": "Quintela",
+        "edad": 31,
+        "lenguajes": ["Python", "Java", "JavaScript"],
+        "lenguajes2": ["PHP", "C++", "C#"]
+    }
+    return render_template('index.html', title=title, datos=datos)
 
 @app.route('/demo')
 def demo():
