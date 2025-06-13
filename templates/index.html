@@ -132,10 +132,10 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item">
-            <a href="../gallery.html" class="nav-link">
+            <a href="{{ url_for('galeria') }}" class="nav-link">
               <i class="nav-icon far fa-image"></i>
               <p>
-                Gallery
+                Galería
               </p>
             </a>
           </li>
@@ -155,14 +155,6 @@
         <div class="row mb-2">
           <div class="col-sm-6">
             <h1>{{title}}</h1>
-            <h2>Datos del estudiante</h2>
-            <ul>
-              <li>Nombre: {{datos.nombre}}</li>
-              <li>Apellido: {{datos.apellido}}</li>
-              <li>Edad: {{datos.edad}}</li>
-              <li>Lenguajes: {{datos.lenguajes}}</li>
-              <li>Lenguajes2: {{datos.lenguajes2}}</li>
-            </ul>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -178,7 +170,45 @@
     <section class="content">
       <div class="container-fluid">
         <div class="row">
-
+                      <div class="col-md-4">
+            <!-- Widget: user widget style 2 -->
+            <div class="card card-widget widget-user-2">
+              <!-- Add the bg color to the header using any of the bg-* classes -->
+              <div class="widget-user-header bg-warning">
+                <div class="widget-user-image">
+                  <img class="img-circle elevation-2" src="{{ url_for('static', filename='dist/img/user8-128x128.jpg') }}" alt="User Avatar">
+                </div>
+                <!-- /.widget-user-image -->
+                <h3 class="widget-user-username">{{datos.nombre}}</h3>
+                <h5 class="widget-user-desc">{{datos.titulo}}</h5>
+              </div>
+              <div class="card-footer p-0">
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      Edad <span class="float-right badge bg-primary">{{datos.edad}}</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      Email <span class="float-right badge bg-info">{{datos.email}}</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      Lenguajes <span class="float-right badge bg-success">{{datos.lenguajes}}</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      Materia <span class="float-right badge bg-danger">{{datos.materia}}</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- /.widget-user -->
+          </div>
           <!-- /.col -->
         </div>
         <!-- /.row -->

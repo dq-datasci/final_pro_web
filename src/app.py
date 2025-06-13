@@ -19,9 +19,11 @@ def index():
     datos = {
         "nombre": "David",
         "apellido": "Quintela",
+        "titulo": "Estudiante de Ciencia de Datos",
         "edad": 31,
+        "email": "HlOyP@example.com",	
         "lenguajes": ["Python", "Java", "JavaScript"],
-        "lenguajes2": ["PHP", "C++", "C#"]
+        "materia": "Programación Web"
     }
     return render_template('index.html', title=title, datos=datos)
 
@@ -32,6 +34,10 @@ def demo():
 @app.route('/resumen')
 def resumen():
     return render_template("resumen.html")
+
+@app.route('/galeria')
+def galeria():
+    return render_template("galeria.html")
 
 
 if __name__ == '__main__':
