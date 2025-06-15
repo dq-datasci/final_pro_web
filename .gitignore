@@ -22,11 +22,11 @@ log/
 *.db
 
 # Ignorar archivos específicos del sistema operativo
-.DS_Store # macOS
-Thumbs.db # Windows
+.DS_Store 
+Thumbs.db 
 
 # IDEs
-.idea/ # PyCharm
-.vscode/ # VS Code (puedes querer rastrear settings.json si es compartido, pero ignora la mayoría)
+.idea/ 
+.vscode/
 *.sublime-project
 *.sublime-workspace
