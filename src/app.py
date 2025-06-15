@@ -16,11 +16,14 @@ app = Flask(__name__, template_folder=template_dir, static_folder=static_dir)
 datos_globales = {
         "nombre": "David",
         "apellido": "Quintela",
-        "titulo": "Estudiante de Ciencia de Datos",
+        "titulo": "Programador Full-Stack",
         "edad": 31,
         "email": "HlOyP@example.com",	
         "lenguajes": ["Python", "Java", "JavaScript"],
-        "materia": "Programación Web"
+        "materia": "Programación Web",
+        "educacion": "Licenciatura en Ingenieria en Ciencia de Datos e Inteligencia de Negocios",
+        "ubicacion": "Planeta Tierra",
+        "anotaciones": "Proyecto para clase programación web"
         }
 @app.route('/')
 def index():

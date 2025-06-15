@@ -161,12 +161,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>{{title}}</h1>
+            <h1>Bienvenidos a mi perfil</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">DataTables</li>
+              <li class="breadcrumb-item active">Perfil</li>
             </ol>
           </div>
         </div>
@@ -177,16 +177,73 @@
     <section class="content">
       <div class="container-fluid">
         <div class="row">
-            <div class="col-md-12 col-lg-6 col-xl-4">
-                <div class="card mb-2 bg-gradient-dark">
-                  <img class="card-img-top" src="{{ url_for('static', filename='dist/img/photo1.png') }}" alt="Dist Photo 1">
-                  <div class="card-img-overlay d-flex flex-column justify-content-end">
-                    <h5 class="card-title text-primary text-white">Bienvenido {{datos.nombre}} {{datos.apellido}}</h5>
-                    <p class="card-text text-white pb-2 pt-1">{{datos.titulo}}</p>
-                  </div>
+            <div class="col-md-3">
+            <!-- Profile Image -->
+            <div class="card card-primary card-outline">
+              <div class="card-body box-profile">
+                <div class="text-center">
+                  <img class="profile-user-img img-fluid img-circle"
+                       src="{{ url_for('static', filename='dist/img/user8-128x128.jpg') }}"
+                       alt="User profile picture">
                 </div>
+
+                <h3 class="profile-username text-center">{{datos.nombre}} {{datos.apellido}}</h3>
+
+                <p class="text-muted text-center">{{datos.titulo}}</p>
+
+                <ul class="list-group list-group-unbordered mb-3">
+                  <li class="list-group-item">
+                    <b>Edad</b> <a class="float-right">{{datos.edad}}</a>
+                  </li>
+                  <li class="list-group-item">
+                    <b>Email</b> <a class="float-right">{{datos.email}}</a>
+                  </li>
+                </ul>
+
+                <a href="#" class="btn btn-primary btn-block"><b>Follow</b></a>
               </div>
-          <!-- /.col -->
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+            </div>
+            <div class="col-md-9">
+                            <!-- About Me Box -->
+            <div class="card card-primary">
+              <div class="card-header">
+                <h3 class="card-title">Acerca de mi</h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <strong><i class="fas fa-book mr-1"></i> Educación</strong>
+
+                <p class="text-muted">
+                    {{datos.educacion}}
+                </p>
+
+                <hr>
+
+                <strong><i class="fas fa-map-marker-alt mr-1"></i> Ubicación</strong>
+
+                <p class="text-muted">{{datos.ubicacion}}</p>
+
+                <hr>
+
+                <strong><i class="fas fa-pencil-alt mr-1"></i> Habilidades</strong>
+
+                <p>
+                    {{datos.lenguajes}}
+                </p>
+
+                <hr>
+
+                <strong><i class="far fa-file-alt mr-1"></i> Notes</strong>
+
+                <p class="text-muted">{{datos.anotaciones}}</p>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.About Me Box -->
+            </div>
         </div>
         <!-- /.row -->
       </div>
