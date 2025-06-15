@@ -13,10 +13,7 @@ static_dir = os.path.join(project_root, 'static')
 # Inicializa la aplicación Flask, especificando ambas rutas
 app = Flask(__name__, template_folder=template_dir, static_folder=static_dir)
 
-@app.route('/')
-def index():
-    title="Bienvenido a mi sitio web"
-    datos = {
+datos_globales = {
         "nombre": "David",
         "apellido": "Quintela",
         "titulo": "Estudiante de Ciencia de Datos",
@@ -24,8 +21,11 @@ def index():
         "email": "HlOyP@example.com",	
         "lenguajes": ["Python", "Java", "JavaScript"],
         "materia": "Programación Web"
-    }
-    return render_template('index.html', title=title, datos=datos)
+        }
+@app.route('/')
+def index():
+    title="Bienvenido a mi sitio web"
+    return render_template('index.html', title=title, datos=datos_globales)
 
 @app.route('/demo')
 def demo():
@@ -41,7 +41,7 @@ def galeria():
 
 @app.route('/perfil')
 def perfil():
-    return render_template("perfil.html")
+    return render_template("perfil.html", datos=datos_globales)
 
 
 if __name__ == '__main__':
