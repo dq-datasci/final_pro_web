@@ -177,45 +177,15 @@
     <section class="content">
       <div class="container-fluid">
         <div class="row">
-                      <div class="col-md-4">
-            <!-- Widget: user widget style 2 -->
-            <div class="card card-widget widget-user-2">
-              <!-- Add the bg color to the header using any of the bg-* classes -->
-              <div class="widget-user-header bg-warning">
-                <div class="widget-user-image">
-                  <img class="img-circle elevation-2" src="{{ url_for('static', filename='dist/img/user8-128x128.jpg') }}" alt="User Avatar">
+            <div class="col-md-12 col-lg-6 col-xl-4">
+                <div class="card mb-2 bg-gradient-dark">
+                  <img class="card-img-top" src="{{ url_for('static', filename='dist/img/photo1.png') }}" alt="Dist Photo 1">
+                  <div class="card-img-overlay d-flex flex-column justify-content-end">
+                    <h5 class="card-title text-primary text-white">Bienvenido {{datos.nombre}} {{datos.apellido}}</h5>
+                    <p class="card-text text-white pb-2 pt-1">{{datos.titulo}}</p>
+                  </div>
                 </div>
-                <!-- /.widget-user-image -->
-                <h3 class="widget-user-username">{{datos.nombre}}</h3>
-                <h5 class="widget-user-desc">{{datos.titulo}}</h5>
               </div>
-              <div class="card-footer p-0">
-                <ul class="nav flex-column">
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      Edad <span class="float-right badge bg-primary">{{datos.edad}}</span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      Email <span class="float-right badge bg-info">{{datos.email}}</span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      Lenguajes <span class="float-right badge bg-success">{{datos.lenguajes}}</span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      Materia <span class="float-right badge bg-danger">{{datos.materia}}</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <!-- /.widget-user -->
-          </div>
           <!-- /.col -->
         </div>
         <!-- /.row -->
