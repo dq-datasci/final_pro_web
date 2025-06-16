@@ -228,7 +228,7 @@
                       </td>
                       <td>
                           <a>
-                              AdminLTE v3
+                              {{proyecto_1.nombre}}
                           </a>
                           <br/>
                           <small>
@@ -239,15 +239,19 @@
                           <ul class="list-inline">
                               <li class="list-inline-item">
                                   <img alt="Avatar" class="table-avatar" src="{{ url_for('static', filename='dist/img/avatar.png') }}">
+                                  <p>{{proyecto_1.grupo_trabajo[0]}}</p>
                               </li>
                               <li class="list-inline-item">
                                   <img alt="Avatar" class="table-avatar" src="{{ url_for('static', filename='dist/img/avatar2.png') }}">
+                                  <p>{{proyecto_1.grupo_trabajo[1]}}</p>
                               </li>
                               <li class="list-inline-item">
                                   <img alt="Avatar" class="table-avatar" src="{{ url_for('static', filename='dist/img/avatar3.png') }}">
+                                  <p>{{proyecto_1.grupo_trabajo[2]}}</p>
                               </li>
                               <li class="list-inline-item">
                                   <img alt="Avatar" class="table-avatar" src="{{ url_for('static', filename='dist/img/avatar4.png') }}">
+                                  <p>{{proyecto_1.grupo_trabajo[3]}}</p>
                               </li>
                           </ul>
                       </td>
@@ -257,27 +261,27 @@
                               </div>
                           </div>
                           <small>
-                              57% Complete
+                              {{proyecto_1.progreso[0]}} {{proyecto_1.progreso[1]}}
                           </small>
                       </td>
                       <td class="project-state">
-                          <span class="badge badge-success">Success</span>
+                          <span class="badge badge-success">{{proyecto_1.estado[0]}}</span>
                       </td>
                       <td class="project-actions text-right">
                           <a class="btn btn-primary btn-sm" href="#">
                               <i class="fas fa-folder">
                               </i>
-                              View
+                              Ver
                           </a>
                           <a class="btn btn-info btn-sm" href="#">
                               <i class="fas fa-pencil-alt">
                               </i>
-                              Edit
+                              Editar
                           </a>
                           <a class="btn btn-danger btn-sm" href="#">
                               <i class="fas fa-trash">
                               </i>
-                              Delete
+                              Borrar
                           </a>
                       </td>
                   </tr>
@@ -287,7 +291,7 @@
                       </td>
                       <td>
                           <a>
-                              AdminLTE v3
+                              {{proyecto_2.nombre}}
                           </a>
                           <br/>
                           <small>
@@ -298,39 +302,41 @@
                           <ul class="list-inline">
                               <li class="list-inline-item">
                                   <img alt="Avatar" class="table-avatar" src="{{ url_for('static', filename='dist/img/avatar.png') }}">
+                                  <p>{{proyecto_2.grupo_trabajo[0]}}</p>
                               </li>
                               <li class="list-inline-item">
                                   <img alt="Avatar" class="table-avatar" src="{{ url_for('static', filename='dist/img/avatar2.png') }}">
+                                  <p>{{proyecto_2.grupo_trabajo[1]}}</p>
                               </li>
                           </ul>
                       </td>
                       <td class="project_progress">
                           <div class="progress progress-sm">
-                              <div class="progress-bar bg-green" role="progressbar" aria-valuenow="47" aria-valuemin="0" aria-valuemax="100" style="width: 47%">
+                              <div class="progress-bar bg-yellow" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
                               </div>
                           </div>
                           <small>
-                              47% Complete
+                              {{proyecto_2.progreso[0]}} {{proyecto_2.progreso[1]}}
                           </small>
                       </td>
                       <td class="project-state">
-                          <span class="badge badge-success">Success</span>
+                          <span class="badge badge-warning">{{proyecto_2.estado[2]}}</span>
                       </td>
                       <td class="project-actions text-right">
                           <a class="btn btn-primary btn-sm" href="#">
                               <i class="fas fa-folder">
                               </i>
-                              View
+                              Ver
                           </a>
                           <a class="btn btn-info btn-sm" href="#">
                               <i class="fas fa-pencil-alt">
                               </i>
-                              Edit
+                              Editar
                           </a>
                           <a class="btn btn-danger btn-sm" href="#">
                               <i class="fas fa-trash">
                               </i>
-                              Delete
+                              Borrar
                           </a>
                       </td>
                   </tr>
@@ -340,7 +346,7 @@
                       </td>
                       <td>
                           <a>
-                              AdminLTE v3
+                              {{proyecto_3.nombre}}
                           </a>
                           <br/>
                           <small>
@@ -351,42 +357,45 @@
                           <ul class="list-inline">
                               <li class="list-inline-item">
                                   <img alt="Avatar" class="table-avatar" src="{{ url_for('static', filename='dist/img/avatar.png') }}">
+                                  <p>{{proyecto_3.grupo_trabajo[0]}}</p>
                               </li>
                               <li class="list-inline-item">
                                   <img alt="Avatar" class="table-avatar" src="{{ url_for('static', filename='dist/img/avatar2.png') }}">
+                                  <p>{{proyecto_3.grupo_trabajo[1]}}</p>
                               </li>
                               <li class="list-inline-item">
                                   <img alt="Avatar" class="table-avatar" src="{{ url_for('static', filename='dist/img/avatar3.png') }}">
+                                  <p>{{proyecto_3.grupo_trabajo[2]}}</p>
                               </li>
                           </ul>
                       </td>
                       <td class="project_progress">
                           <div class="progress progress-sm">
-                              <div class="progress-bar bg-green" role="progressbar" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100" style="width: 77%">
+                              <div class="progress-bar bg-green" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
                               </div>
                           </div>
                           <small>
-                              77% Complete
+                              {{proyecto_3.progreso[0]}} {{proyecto_3.progreso[1]}}
                           </small>
                       </td>
                       <td class="project-state">
-                          <span class="badge badge-success">Success</span>
+                          <span class="badge badge-success">{{proyecto_3.estado[1]}}</span>
                       </td>
                       <td class="project-actions text-right">
                           <a class="btn btn-primary btn-sm" href="#">
                               <i class="fas fa-folder">
                               </i>
-                              View
+                              Ver
                           </a>
                           <a class="btn btn-info btn-sm" href="#">
                               <i class="fas fa-pencil-alt">
                               </i>
-                              Edit
+                              Editar
                           </a>
                           <a class="btn btn-danger btn-sm" href="#">
                               <i class="fas fa-trash">
                               </i>
-                              Delete
+                              Borrar
                           </a>
                       </td>
                   </tr>

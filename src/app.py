@@ -49,20 +49,20 @@ def perfil():
 @app.route('/proyectos')
 def proyectos():
     proyecto_1 = {
-        "nombre": "Proyecto 1",
+        "nombre": "Proyecto de la nasa",
         "progreso": ["57%", "completado"],
         "grupo_trabajo": ["Raul", "Melissa", "Ruthy", "Anwar"],
         "estado": ["en progreso", "terminado", "postergado"]
         }
     proyecto_2 = {
         "nombre": "Proyecto 2",
-        "progreso": ["47%", "completado"],
+        "progreso": ["60%", "completado"],
         "grupo_trabajo": ["Raul", "Melissa", "Ruthy", "Anwar"],
         "estado": ["en progreso", "terminado", "postergado"]
         }
     proyecto_3 = {
         "nombre": "Proyecto 3",
-        "progreso": ["77%", "completado"],
+        "progreso": ["100%", "completado"],
         "grupo_trabajo": ["Raul", "Melissa", "Ruthy", "Anwar"],
         "estado": ["en progreso", "terminado", "postergado"]
         }
