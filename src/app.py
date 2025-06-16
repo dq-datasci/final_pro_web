@@ -66,7 +66,7 @@ def proyectos():
         "grupo_trabajo": ["Raul", "Melissa", "Ruthy", "Anwar"],
         "estado": ["en progreso", "terminado", "postergado"]
         }
-    return render_template("proyectos.html", datos=datos_globales)
+    return render_template("proyectos.html", datos=datos_globales, proyecto_1=proyecto_1, proyecto_2=proyecto_2, proyecto_3=proyecto_3)
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5000)
