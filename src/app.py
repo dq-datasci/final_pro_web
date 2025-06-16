@@ -19,7 +19,7 @@ datos_globales = {
         "titulo": "Programador Full-Stack",
         "edad": 31,
         "email": "HlOyP@example.com",	
-        "lenguajes": ["Python", "Java", "JavaScript"],
+        "lenguajes": ["Python", "R", "JavaScript", "HTML", "CSS", "SQL"],
         "materia": "Programación Web",
         "educacion": "Licenciatura en Ingenieria en Ciencia de Datos e Inteligencia de Negocios",
         "ubicacion": "Planeta Tierra",
