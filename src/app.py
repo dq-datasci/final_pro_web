@@ -48,6 +48,24 @@ def perfil():
 
 @app.route('/proyectos')
 def proyectos():
+    proyecto_1 = {
+        "nombre": "Proyecto 1",
+        "progreso": ["57%", "completado"],
+        "grupo_trabajo": ["Raul", "Melissa", "Ruthy", "Anwar"],
+        "estado": ["en progreso", "terminado", "postergado"]
+        }
+    proyecto_2 = {
+        "nombre": "Proyecto 2",
+        "progreso": ["47%", "completado"],
+        "grupo_trabajo": ["Raul", "Melissa", "Ruthy", "Anwar"],
+        "estado": ["en progreso", "terminado", "postergado"]
+        }
+    proyecto_3 = {
+        "nombre": "Proyecto 3",
+        "progreso": ["77%", "completado"],
+        "grupo_trabajo": ["Raul", "Melissa", "Ruthy", "Anwar"],
+        "estado": ["en progreso", "terminado", "postergado"]
+        }
     return render_template("proyectos.html", datos=datos_globales)
 
 if __name__ == '__main__':
