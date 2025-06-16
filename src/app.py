@@ -46,6 +46,9 @@ def galeria():
 def perfil():
     return render_template("perfil.html", datos=datos_globales)
 
+@app.route('/proyectos')
+def proyectos():
+    return render_template("proyectos.html", datos=datos_globales)
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5000)
